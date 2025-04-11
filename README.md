@@ -2,8 +2,6 @@
 
 by Trey Wayment (twayment@umich.edu)
 
-This is the final project for EECS 398 at the University of Michigan
-
 ## Introduction
 
 This project uses post-game data from professional League of Legends (LoL) matches played in 2022 to explore how player roles affect performance. The dataset comes from [Oracle’s Elixir](https://oracleselixir.com). Each match has 12 relevant rows: one for each of the 5 players on both teams and 2 containing summary data for the two teams. The dataset contains 150,588 rows and 161 columns.
@@ -61,26 +59,27 @@ These are the first 5 rows of the cleaned dataset:
 
 <iframe
     src="assets/damage_share.html"
-    width="800"
-    height="600"
+    width="700"
+    height="500"
     frameborder="0"
 ></iframe>
-
 <br>
 
 This histogram displays the distribution of **Damage Share**, or the percentage of a team’s damage dealt by each player.  
 The shape of the distribution suggests that damage output isn’t evenly distributed among all players, which supports the idea that certain roles — like Mid or ADC — are more likely to carry.
 
+<br>
 <iframe
     src="assets/creep_score_per_minute.html"
-    width="800"
-    height="600"
+    width="700"
+    height="500"
     frameborder="0"
 ></iframe>
-
 <br>
 
 This histogram shows that most players fall between 5–10 **Creep Score Per Minute (CSPM)**, with a right-skewed distribution. Since high farm rates are often linked to carry potential, CSPM is useful for comparing Mid laners and ADCs.
+
+<br>
 
 ### Bivariate Analysis
 
