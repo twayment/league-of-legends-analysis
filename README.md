@@ -59,8 +59,8 @@ These are the first 5 rows of the cleaned dataset:
 
 <iframe
     src="assets/damage_share.html"
-    width="700"
-    height="500"
+    width="800"
+    height="600"
     frameborder="0"
 ></iframe>
 <br>
@@ -71,15 +71,13 @@ The shape of the distribution suggests that damage output isn’t evenly distrib
 <br>
 <iframe
     src="assets/creep_score_per_minute.html"
-    width="700"
-    height="500"
+    width="800"
+    height="600"
     frameborder="0"
 ></iframe>
 <br>
 
 This histogram shows that most players fall between 5–10 **Creep Score Per Minute (CSPM)**, with a right-skewed distribution. Since high farm rates are often linked to carry potential, CSPM is useful for comparing Mid laners and ADCs.
-
-<br>
 
 ### Bivariate Analysis
 
