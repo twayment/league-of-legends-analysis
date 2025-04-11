@@ -61,20 +61,24 @@ These are the first 5 rows of the cleaned dataset:
 
 <iframe
     src="assets/damage_share.html"
-    width="600"
-    height="400"
+    width="800"
+    height="600"
     frameborder="0"
 ></iframe>
+
+<br>
 
 This histogram displays the distribution of **Damage Share**, or the percentage of a team’s damage dealt by each player.  
 The shape of the distribution suggests that damage output isn’t evenly distributed among all players, which supports the idea that certain roles — like Mid or ADC — are more likely to carry.
 
 <iframe
     src="assets/creep_score_per_minute.html"
-    width="600"
-    height="400"
+    width="800"
+    height="600"
     frameborder="0"
 ></iframe>
+
+<br>
 
 This histogram shows that most players fall between 5–10 **Creep Score Per Minute (CSPM)**, with a right-skewed distribution. Since high farm rates are often linked to carry potential, CSPM is useful for comparing Mid laners and ADCs.
 
