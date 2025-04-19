@@ -58,29 +58,29 @@ These are the first 5 rows of the cleaned dataset:
 
 <iframe
     src="assets/damage_share.html"
-    width="800"
-    height="400"
+    width="650"
+    height="390"
     frameborder="0"
 ></iframe>
 
-This histogram displays the distribution of **Damage Share**, or the percentage of a team’s damage dealt by each player.  
+This histogram displays the distribution of `Damage Share`, or the percentage of a team’s damage dealt by each player.  
 The shape of the distribution suggests that damage output isn’t evenly distributed among all players, which supports the idea that certain roles — like Mid or ADC — are more likely to carry.
 
 <iframe
     src="assets/creep_score_per_minute.html"
-    width="800"
-    height="400"
+    width="650"
+    height="390"
     frameborder="0"
 ></iframe>
 
-This histogram shows that most players fall between 5–10 **Creep Score Per Minute (CSPM)**, with a right-skewed distribution. Since high farm rates are often linked to carry potential, CSPM is useful for comparing Mid laners and ADCs.
+This histogram shows that most players fall between 5–10 `Creep Score Per Minute (CSPM)`, with a right-skewed distribution. Since high farm rates are often linked to carry potential, CSPM is useful for comparing Mid laners and ADCs.
 
 ### Bivariate Analysis
 
 <iframe
     src="assets/kill_dist_by_role.html"
-    width="800"
-    height="400"
+    width="650"
+    height="390"
     frameborder="0"
 ></iframe>
 
@@ -88,8 +88,8 @@ This box plot shows that ADCs tend to have slightly higher kill counts than Mid 
 
 <iframe
     src="assets/cspm.html"
-    width="800"
-    height="400"
+    width="650"
+    height="390"
     frameborder="0"
 ></iframe>
 
@@ -97,7 +97,7 @@ This box plot shows that ADCs also tend to have higher and more consistent CSPM 
 
 ### Interesting Aggregates
 
-The table below shows the average damage share, KDA, and Creep Score Per Minute (CSPM) for each player role.
+The table below shows the average `damage share`, `kda`, and `Creep Score Per Minute (CSPM)` for each player role.
 
 | position   |   damageshare |   kda |   cspm |
 |:-----------|--------------:|------:|-------:|
@@ -115,7 +115,13 @@ I didn’t perform any imputation because all of the columns used in my analysis
 
 ### Framing a Prediction Problem
 
-todo
+The goal of my prediction task is to **determine which role (top, jungle, mid, bot/ADC, or support) a player played based on their post-game data.** This is a multiclass classification task since there are five possible roles.
+
+The response variable is `position`, and I chose it because roles are central to understanding player behavior in League of Legends. Predicting a player’s role based on their performance can reveal how distinct the roles are and whether they exhibit unique patterns.
+
+I used the post-game features: `champion`, `kills`, `visionscore`, and `totalgold`. These are all values that are available after a match finishes, so everything used is known at the time of prediction.
+
+I evaluated the model using **accuracy**, since all five classes are relatively balanced in size. I didn’t use F1-score because the classification problem isn’t highly imbalanced — so tracking precision and recall separately wasn’t necessary.
 
 ### Baseline Model
 
