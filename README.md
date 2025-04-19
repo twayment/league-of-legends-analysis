@@ -60,7 +60,7 @@ These are the first 5 rows of the cleaned dataset:
 <iframe
     src="assets/damage_share.html"
     width="800"
-    height="400"
+    height="600"
     frameborder="0"
 ></iframe>
 
@@ -70,7 +70,7 @@ The shape of the distribution suggests that damage output isn’t evenly distrib
 <iframe
     src="assets/creep_score_per_minute.html"
     width="800"
-    height="400"
+    height="600"
     frameborder="0"
 ></iframe>
 
@@ -81,23 +81,20 @@ This histogram shows that most players fall between 5–10 **Creep Score Per Min
 <iframe
     src="assets/kill_dist_by_role.html"
     width="800"
-    height="400"
+    height="600"
     frameborder="0"
 ></iframe>
 
+This box plot shows that ADCs tend to have slightly higher kill counts than Mid laners. This supports the idea that ADCs frequently take on the primary carry role through kill participation.
+
 <iframe
-    src="assets/cspm_0.html"
+    src="assets/cspm.html"
     width="800"
-    height="400"
+    height="600"
     frameborder="0"
 ></iframe>
 
-<iframe
-    src="assets/cspm_1.html"
-    width="800"
-    height="400"
-    frameborder="0"
-></iframe>
+This box plot shows that ADCs also tend to have higher and more consistent CSPM than Mid laners. This suggests that ADCs contribute through superior farming efficiency.
 
 ### Interesting Aggregates
 
