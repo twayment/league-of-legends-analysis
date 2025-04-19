@@ -54,13 +54,12 @@ These are the first 5 rows of the cleaned dataset:
 |        10 | Jinx       | 11.1734 |      0.333955 |        2 |       8 | bot        |       14018 |            40 |
 |         0 | Orianna    | 10.5298 |      0.387418 |        4 |       2 | mid        |       15149 |            50 |
 
-
 ### Univariate Analysis
 
 <iframe
     src="assets/damage_share.html"
     width="800"
-    height="600"
+    height="400"
     frameborder="0"
 ></iframe>
 
@@ -70,7 +69,7 @@ The shape of the distribution suggests that damage output isn’t evenly distrib
 <iframe
     src="assets/creep_score_per_minute.html"
     width="800"
-    height="600"
+    height="400"
     frameborder="0"
 ></iframe>
 
@@ -81,7 +80,7 @@ This histogram shows that most players fall between 5–10 **Creep Score Per Min
 <iframe
     src="assets/kill_dist_by_role.html"
     width="800"
-    height="600"
+    height="400"
     frameborder="0"
 ></iframe>
 
@@ -90,7 +89,7 @@ This box plot shows that ADCs tend to have slightly higher kill counts than Mid 
 <iframe
     src="assets/cspm.html"
     width="800"
-    height="600"
+    height="400"
     frameborder="0"
 ></iframe>
 
@@ -98,8 +97,30 @@ This box plot shows that ADCs also tend to have higher and more consistent CSPM 
 
 ### Interesting Aggregates
 
-todo
+The table below shows the average damage share, KDA, and Creep Score Per Minute (CSPM) for each player role.
+
+| position   |   damageshare |   kda |   cspm |
+|:-----------|--------------:|------:|-------:|
+| bot        |          0.26 |  5.7  |   8.73 |
+| jng        |          0.16 |  5.16 |   5.68 |
+| mid        |          0.26 |  5.4  |   8.27 |
+| sup        |          0.08 |  5.09 |   1.13 |
+| top        |          0.23 |  4.18 |   7.81 |
+
+Bot laners (ADCs) and Mid laners have the highest damage share and CSPM, which fits their role as primary damage dealers. Bot laners also have the highest average KDA, suggesting that ADCs may carry their team more often than Mid laners.
 
 ### Imputation
+
+I didn’t perform any imputation because all of the columns used in my analysis were complete after filtering the dataset to only include rows where `datacompleteness` == `complete`. Since none of the key columns had missing values, there was no need to fill in or estimate any data. This is ideal, as it means my analysis is based entirely on actual observed values rather than approximations.
+
+### Framing a Prediction Problem
+
+todo
+
+### Baseline Model
+
+todo
+
+## Final Model
 
 todo
