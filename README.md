@@ -134,4 +134,4 @@ Since I used a RandomForestClassifier, I didn’t apply StandardScaler. Random F
 
 For hyperparameter tuning, I used GridSearchCV with 5-fold cross-validation to test combinations of n_estimators and max_depth. The best combination turned out to be n_estimators=100 and max_depth=10, with a best cross-validation accuracy of 82.8%.
 
-The final model achieved an accuracy of **82.5%**, improving on the baseline model’s 80%. This tells us that the model correctly predicts a player's role based off their post game data 82.5% of the time. I’m pretty happy with how it turned out — it feels like a solid model that does a good job without being overly complicated.
+The final model achieved an accuracy of **82.5%**, improving on the baseline model’s 80%. This boost likely comes from the engineered features, which added role-specific insights beyond just raw performance stats. This tells us that the model correctly predicts a player's role based off their post game data 82.5% of the time. I’m pretty happy with how it turned out — it feels like a solid model that does a good job without being overly complicated.
