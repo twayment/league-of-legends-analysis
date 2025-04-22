@@ -128,7 +128,7 @@ The model achieved an accuracy of **80%**, which I think is pretty good for a si
 
 ### Final Model
 
-For my final model, I used five quantitative features: `kills`, `xpat10`, `cspm`, and two that I engineered — `kda` and `vision_efficiency`. I created these using a FunctionTransformer directly inside the pipeline. KDA (kills + assists divided by deaths) reflects a player’s impact while staying alive, and vision efficiency (vision score divided by total gold) captures how effectively a player contributes vision relative to their resources — especially helpful for identifying Supports.
+For my final model, I used five quantitative features: `kills`, `xpat10`, `cspm`, and two that I engineered — `kda` and `vision_efficiency`. I created these using a FunctionTransformer directly inside the pipeline. KDA (kills + assists divided by deaths) reflects a player’s impact while staying alive. Roles like Mid and ADC often have high KDA due to their carry potential, while Supports and Top laners often show lower values, making it a useful signal for classification. Vision efficiency (vision score divided by total gold) captures how effectively a player contributes vision relative to their resources. This is particularly helpful for identifying Supports, who tend to have lower gold income but are expected to have high vision scores. Including these features adds more role-specific context to the model, making it better at distinguishing between different styles of play tied to each position.
 
 Since I used a RandomForestClassifier, I didn’t apply StandardScaler. Random Forests aren’t sensitive to the scale of features, so scaling would’ve added unnecessary complexity without any benefit.
 
