@@ -19,10 +19,10 @@ The following columns from the dataset are most relevant to my analysis:
 - `deaths`: Number of times the player died.
 - `assists`: Number of kills the player assisted.
 - `xpat10`: The players XP (experience level) 10 minutes into the game.
-- `totalgold`: Total gold earned in the game — reflects resource efficiency.
-- `visionscore`: A metric measuring vision control (e.g., wards placed/cleared).
+- `visionscore`: A metric measuring vision control for the player player (e.g., wards placed/cleared).
+- `cspm`: The players Creep Score per Minute — minions killed per minute, indicating farm efficiency.
+- `totalgold`: The players total gold earned in the game — reflects resource efficiency.
 - `damageshare`: Percentage of team damage dealt by the player — a measure of impact.
-- `cspm`: Creep Score per Minute — minions killed per minute, indicating farm efficiency.
 
 ## Data Cleaning and Exploratory Data Analysis
 
